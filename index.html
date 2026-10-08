@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light">
+<title>Ecotourism • Reading Dossier | Abhi-Uyen</title>
+<style>
+:root{--ink:#202b2b;--bg:#1d2928;--paper:#fffcf4;--pale:#f8edc9;--lime:#d6ff41;--vi:#6a402e;--brick:#9b3747;--edge:#202927;--shadow:4px 5px 0 var(--edge)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5}button,select{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.43}button:focus-visible,select:focus-visible{outline:3px solid #2461d8;outline-offset:3px}.wrap{max-width:1260px;margin:auto;padding:22px 22px 65px}.hero{color:#f8f8f4;margin:0 0 23px}.hero h1{font-size:clamp(34px,4.1vw,48px);letter-spacing:-.035em;line-height:1.12;margin:0 0 8px;font-weight:800}.hero p{color:#cbd1cf;font-size:19px;margin:0}.panel{background:var(--paper);border:2px solid var(--edge);box-shadow:var(--shadow);padding:19px 22px;margin:0 0 24px}.nav{display:flex;flex-wrap:wrap;gap:11px;align-items:center}.btn,select{background:var(--paper);border:2px solid var(--edge);box-shadow:3px 4px 0 var(--edge);border-radius:0;padding:10px 15px;min-height:44px;white-space:normal}.btn:hover:not(:disabled){transform:translateY(-1px)}.btn.active,.btn.primary{background:var(--lime)}.btn.small{padding:7px 11px;min-height:38px;font-size:14px}.btn.subtle{background:#f3f2e8}.btn.is-selected{background:var(--pale)}.audio-panel{display:flex;gap:15px;align-items:center;justify-content:space-between;flex-wrap:wrap}.audio-panel audio{flex:1 1 600px;min-width:210px;height:48px}.audio-action{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.audio-action select{min-width:90px}.notice{font-size:12px;color:#53605b;margin:6px 0 0}.meta{font-size:13px;border-radius:30px;padding:7px 12px;background:#f5e9c3;white-space:nowrap}h2{font-size:clamp(21px,2.4vw,29px);line-height:1.25;margin:6px 0 16px}.line-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.study-panel{min-height:360px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:15px 0 24px;color:#5f6a68;font-size:14px}.toolbar .btn{font-size:14px}.reading p{font:normal clamp(19px,2.1vw,25px)/1.84 Georgia,'Times New Roman',serif;text-align:justify;margin:10px 0 24px;word-break:normal;overflow-wrap:break-word}.sentence-run{border-radius:3px;transition:background .08s}.sentence-run.audio-active{background:#e7f7a9;box-decoration-break:clone;-webkit-box-decoration-break:clone}.colloc{font-weight:700;color:var(--brick);cursor:pointer}.colloc:hover{text-decoration:underline}.color-yellow{background:#f9e783}.color-green{background:#a9e5a9}.color-pink{background:#f6b3d7}.para-vi{background:#fffaf0;border-left:3px solid #bd955d;padding:10px 17px;color:var(--vi);font-size:18px;line-height:1.78;margin:-7px 0 25px}#home:empty,#sentence:empty,#cards:empty{display:none}.muted{color:#66706d}.overline{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#59705d}.builder{max-width:1040px;margin:0 auto}.builder-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}.builder-top select{max-width:220px}.hint-box{background:var(--pale);border:2px solid var(--edge);padding:16px 19px;margin:19px 0}.hint-box .line-head{margin-bottom:6px}.hint-box h3{font-size:13px;margin:0;letter-spacing:.1em}.hint-box p{font-size:19px;color:var(--vi);line-height:1.6;margin:5px 0 0}.hint-box .hidden-hint{font-size:17px;color:#7d6b54}.listen-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:20px 0 13px}.build-slot{min-height:118px;border:2px dashed #77827c;padding:17px;display:flex;flex-wrap:wrap;align-content:flex-start;align-items:center;gap:9px;background:#fffffd}.build-slot .placeholder{color:#89908a;font-size:16px}.chunk-bank{display:flex;flex-wrap:wrap;gap:10px;min-height:90px;padding:15px 0 18px}.chunk{font-size:16px;font-weight:600;border:2px solid var(--edge);background:#fff;box-shadow:2px 3px 0 var(--edge);padding:10px 12px;line-height:1.35;min-height:45px;text-align:left}.chunk:hover{background:#f1f9dc}.chunk.placed{background:#e9f3dd}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 5px}.feedback{min-height:30px;margin-top:14px;font-size:16px;font-weight:700}.feedback.ok{color:#235d26}.feedback.err{color:#973447}.answer{background:#f7f3e8;border-left:3px solid #a89a79;padding:10px 15px;font:19px/1.65 Georgia,serif;margin:10px 0}.pager{border-top:1px solid #deded3;display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:18px;margin-top:25px;flex-wrap:wrap}.progress{font-weight:bold;font-size:14px;color:#46534c}.progress-track{background:#e1e2d6;height:6px;margin:10px 0 0}.progress-fill{height:6px;background:#6f9a49;width:0;transition:width .2s}.flash{border:2px solid var(--edge);padding:23px 20px;margin:20px 0 14px;background:#fffdf8;min-height:310px;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column}.flash .phrase{font-size:clamp(23px,3.4vw,34px);font-weight:800;line-height:1.32;max-width:760px}.flash .kind{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#5b725e;font-weight:bold;margin:10px 0}.flash-detail{border-top:1px solid #e5e5d9;margin:15px 0 0;padding-top:12px;width:100%;max-width:750px}.flash-detail .ipa{font-size:17px;color:#566056;margin:5px 0}.flash-detail .meaning{font-size:20px;color:var(--vi);font-weight:bold;margin:9px 0}.flash-detail .example{font:18px/1.65 Georgia,serif;text-align:left;background:#faf7ed;padding:12px 15px;margin:12px 0}.flash-detail .example strong{color:var(--brick)}.flash-detail .translate{font-size:16px;color:var(--vi);text-align:left;line-height:1.6}.card-actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px}.card-tools{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}.selected-review{background:#f0dfa7!important}.studied{background:#e1f1de!important}.foot{text-align:center;color:#cbd5d0;font-weight:700;margin:26px 0 0;font-size:14px;letter-spacing:.025em}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1e2e25;color:#fff;padding:10px 17px;border:1px solid #b0c78b;max-width:90vw;z-index:5;font-size:14px;display:none}.detail-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.tip{padding:7px 0;color:#52615b;font-size:14px}@media (max-width:650px){.wrap{padding:14px 12px 48px}.panel{padding:14px 12px;margin-bottom:17px;box-shadow:3px 4px 0 var(--edge)}.hero{margin:5px 0 18px}.hero p{font-size:16px}.nav{gap:8px}.btn,select{padding:9px 11px;font-size:14px;min-height:42px}.audio-panel audio{width:100%;min-width:0;flex:1 1 100%}.reading p{font-size:20px;line-height:1.72;text-align:left}.para-vi{font-size:17px}.hint-box p{font-size:18px}.chunk{font-size:15px}.builder-top select{width:100%;max-width:unset}.meta{white-space:normal}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="hero"><h1>Ecotourism &amp; Conservation</h1><p>Read. Listen. Discover the connection.</p></header>
+<section class="panel"><nav class="nav" aria-label="Learning modules"><button class="btn active" id="nav-home" data-tab="home">Home</button><button class="btn" id="nav-sentence" data-tab="sentence">Sentence</button><button class="btn" id="nav-cards" data-tab="cards">Review Cards</button><button class="btn" id="toggleVi">VI OFF</button><button class="btn" id="toggleColloc">Key phrases ON</button><button class="btn" id="resetAll">Reset All</button></nav></section>
+<section class="panel audio-panel" aria-label="Reading audio"><audio id="audio" src="reading.mp3" controls preload="metadata"></audio><div class="audio-action"><button class="btn" id="stopAudio">■ Stop</button><label for="speed">Speed</label><select id="speed" aria-label="Audio playback speed"><option value="0.75">0.75×</option><option value="0.9">0.9×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></div></section>
+<section class="panel study-panel" id="home"></section><section class="panel study-panel" id="sentence" hidden></section><section class="panel study-panel" id="cards" hidden></section>
+<footer class="foot">Designed by Abhi-Uyen</footer>
+</main><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script id="reading-data" type="application/json">{
+  "paragraphs": [
+    [
+      "Environmentalists often fear that tourists will trample all over sensitive natural resource areas, but tourism may bring the needed and only economic incentives to help drive conservation, said Bynum Boley.",
+      "Ecotourism and natural resource conservation already have a mutually beneficial relationship that is ideal for creating a sustainable partnership."
+    ],
+    [
+      "“Ecotourism destinations benefit in the form of enhanced tourism competitiveness from the protection of quality natural resources,” he said.",
+      "“Meanwhile, the conservation of these natural resources is increasingly valued since these pristine natural resources are the foundation of the ecotourism industry and the driver of all economic benefits associated with ecotourism.”"
+    ],
+    [
+      "Tourism is a $7.6 trillion global industry, provides 277 million jobs and is a primary income source for 20 of the world's 48 least-developed countries.",
+      "It also subsidizes environmental protection and helps protect, conserve and value cultural resources that might otherwise be undervalued by the host community, Boley said.",
+      "In the newspaper, Boley and co-author Gary Green said that despite past tension between the tourism industry and environmentalists, the two should team up as allies to fight off increasing conversion of land away from its natural state, Ecotourists not only provide a boost to the economy in such places, they can also motivate landowners into keeping the environment in its natural state instead of converting it into something unsustainable.",
+      "They could also influence the public perception of conservation, Boley explained, which does not often favor environmental protection."
+    ],
+    [
+      "“The public has become increasing less prone to respond to environmental messages,” he said.",
+      "“Economic messages are needed in order to attract the public's interest.”",
+      "Too often, Boley and Green said, unique natural resource areas are converted into urban, suburban and agricultural developments without considering their ecotourism potential.",
+      "In addition to the lost ecotourism revenue, there are a host of negative environmental consequences such as biodiversity loss, water and food shortages and the land being unable to mitigate the effects of climate change.",
+      "These areas are not valued for their unique attributes or the valuable natural resources they provide, Green said, “so we lose them.”"
+    ],
+    [
+      "Tourists have historically been seen as having a negative impact on the environment.",
+      "Critics complain that they violate fragile and threatened natural environments while contributing to greenhouse gases from the increased number of flights to these exotic and often remote locales.",
+      "While these criticisms are justified, Boley and Green said responsible programs promote education of ecological conservation and environmental sustainability, fostering a greater understanding and appreciation of these exotic areas."
+    ]
+  ],
+  "sentences": [
+    {
+      "id": 0,
+      "p": 1,
+      "text": "Environmentalists often fear that tourists will trample all over sensitive natural resource areas, but tourism may bring the needed and only economic incentives to help drive conservation, said Bynum Boley.",
+      "vi": "Các nhà môi trường thường lo sợ rằng khách du lịch sẽ giẫm đạp lên những khu vực tài nguyên thiên nhiên nhạy cảm, nhưng du lịch có thể đem lại những động lực kinh tế cần thiết, thậm chí là duy nhất, để thúc đẩy bảo tồn, theo Bynum Boley.",
+      "chunks": [
+        "Environmentalists often fear",
+        "that tourists will trample all over",
+        "sensitive natural resource areas,",
+        "but tourism may bring",
+        "the needed and only economic incentives",
+        "to help drive conservation,",
+        "said Bynum Boley."
+      ],
+      "start": 0.26,
+      "end": 12.69
+    },
+    {
+      "id": 1,
+      "p": 1,
+      "text": "Ecotourism and natural resource conservation already have a mutually beneficial relationship that is ideal for creating a sustainable partnership.",
+      "vi": "Du lịch sinh thái và bảo tồn tài nguyên thiên nhiên vốn có mối quan hệ đôi bên cùng có lợi, rất thích hợp để hình thành một quan hệ hợp tác bền vững.",
+      "chunks": [
+        "Ecotourism and natural resource conservation",
+        "already have a mutually beneficial relationship",
+        "that is ideal for creating",
+        "a sustainable partnership."
+      ],
+      "start": 13.24,
+      "end": 21.68
+    },
+    {
+      "id": 2,
+      "p": 2,
+      "text": "“Ecotourism destinations benefit in the form of enhanced tourism competitiveness from the protection of quality natural resources,” he said.",
+      "vi": "Ông cho biết các điểm du lịch sinh thái hưởng lợi từ năng lực cạnh tranh du lịch được nâng cao nhờ việc bảo vệ những tài nguyên thiên nhiên chất lượng.",
+      "chunks": [
+        "“Ecotourism destinations benefit",
+        "in the form of enhanced tourism competitiveness",
+        "from the protection",
+        "of quality natural resources,”",
+        "he said."
+      ],
+      "start": 22.32,
+      "end": 30.29
+    },
+    {
+      "id": 3,
+      "p": 2,
+      "text": "“Meanwhile, the conservation of these natural resources is increasingly valued since these pristine natural resources are the foundation of the ecotourism industry and the driver of all economic benefits associated with ecotourism.”",
+      "vi": "Trong khi đó, việc bảo tồn các tài nguyên này ngày càng được coi trọng vì chính những tài nguyên thiên nhiên nguyên sơ ấy là nền tảng của ngành du lịch sinh thái và là nguồn tạo ra tất cả lợi ích kinh tế liên quan.",
+      "chunks": [
+        "“Meanwhile, the conservation of these natural resources",
+        "is increasingly valued",
+        "since these pristine natural resources",
+        "are the foundation of the ecotourism industry",
+        "and the driver of all economic benefits",
+        "associated with ecotourism.”"
+      ],
+      "start": 30.75,
+      "end": 43.59
+    },
+    {
+      "id": 4,
+      "p": 3,
+      "text": "Tourism is a $7.6 trillion global industry, provides 277 million jobs and is a primary income source for 20 of the world's 48 least-developed countries.",
+      "vi": "Du lịch là ngành kinh tế toàn cầu trị giá 7,6 nghìn tỷ đô la, tạo ra 277 triệu việc làm và là nguồn thu nhập chính cho 20 trong số 48 quốc gia kém phát triển nhất thế giới.",
+      "chunks": [
+        "Tourism is a $7.6 trillion global industry,",
+        "provides 277 million jobs",
+        "and is a primary income source",
+        "for 20 of the world's 48 least-developed countries."
+      ],
+      "start": 44.29,
+      "end": 55.51
+    },
+    {
+      "id": 5,
+      "p": 3,
+      "text": "It also subsidizes environmental protection and helps protect, conserve and value cultural resources that might otherwise be undervalued by the host community, Boley said.",
+      "vi": "Theo Boley, ngành này còn hỗ trợ tài chính cho bảo vệ môi trường và góp phần gìn giữ, bảo tồn cũng như đề cao giá trị tài nguyên văn hóa vốn có thể bị cộng đồng địa phương xem nhẹ.",
+      "chunks": [
+        "It also subsidizes environmental protection",
+        "and helps protect, conserve and value",
+        "cultural resources that might otherwise be undervalued",
+        "by the host community,",
+        "Boley said."
+      ],
+      "start": 56.12,
+      "end": 65.54
+    },
+    {
+      "id": 6,
+      "p": 3,
+      "text": "In the newspaper, Boley and co-author Gary Green said that despite past tension between the tourism industry and environmentalists, the two should team up as allies to fight off increasing conversion of land away from its natural state, Ecotourists not only provide a boost to the economy in such places, they can also motivate landowners into keeping the environment in its natural state instead of converting it into something unsustainable.",
+      "vi": "Trong bài báo, Boley và đồng tác giả Gary Green cho rằng, bất chấp những căng thẳng trước đây giữa ngành du lịch và các nhà môi trường, hai bên nên hợp tác để chống lại việc chuyển đổi đất khỏi trạng thái tự nhiên; khách du lịch sinh thái không chỉ thúc đẩy kinh tế ở những nơi đó mà còn có thể khuyến khích chủ đất giữ nguyên môi trường tự nhiên thay vì biến nó thành thứ không bền vững.",
+      "chunks": [
+        "In the newspaper, Boley and co-author Gary Green said",
+        "that despite past tension",
+        "between the tourism industry and environmentalists,",
+        "the two should team up as allies",
+        "to fight off increasing conversion of land",
+        "away from its natural state,",
+        "Ecotourists not only provide a boost to the economy",
+        "in such places,",
+        "they can also motivate landowners",
+        "into keeping the environment in its natural state",
+        "instead of converting it into something unsustainable."
+      ],
+      "start": 66.24,
+      "end": 90.48
+    },
+    {
+      "id": 7,
+      "p": 3,
+      "text": "They could also influence the public perception of conservation, Boley explained, which does not often favor environmental protection.",
+      "vi": "Boley giải thích rằng họ còn có thể tác động đến nhận thức của công chúng về bảo tồn, vốn thường không ủng hộ việc bảo vệ môi trường.",
+      "chunks": [
+        "They could also influence the public perception of conservation,",
+        "Boley explained,",
+        "which does not often favor environmental protection."
+      ],
+      "start": 90.48,
+      "end": 97.77
+    },
+    {
+      "id": 8,
+      "p": 4,
+      "text": "“The public has become increasing less prone to respond to environmental messages,” he said.",
+      "vi": "Ông nói: “Công chúng ngày càng ít có xu hướng phản hồi các thông điệp về môi trường.”",
+      "chunks": [
+        "“The public has become increasing less prone",
+        "to respond to environmental messages,”",
+        "he said."
+      ],
+      "start": 97.76,
+      "end": 102.44
+    },
+    {
+      "id": 9,
+      "p": 4,
+      "text": "“Economic messages are needed in order to attract the public's interest.”",
+      "vi": "“Cần có các thông điệp về kinh tế để thu hút sự quan tâm của công chúng.”",
+      "chunks": [
+        "“Economic messages are needed",
+        "in order to attract",
+        "the public's interest.”"
+      ],
+      "start": 102.82,
+      "end": 106.89
+    },
+    {
+      "id": 10,
+      "p": 4,
+      "text": "Too often, Boley and Green said, unique natural resource areas are converted into urban, suburban and agricultural developments without considering their ecotourism potential.",
+      "vi": "Boley và Green cho rằng các khu vực tài nguyên thiên nhiên độc đáo quá thường xuyên bị chuyển thành khu đô thị, ngoại ô hoặc đất nông nghiệp mà không xem xét tiềm năng du lịch sinh thái của chúng.",
+      "chunks": [
+        "Too often, Boley and Green said,",
+        "unique natural resource areas",
+        "are converted into urban, suburban and agricultural developments",
+        "without considering their ecotourism potential."
+      ],
+      "start": 106.87,
+      "end": 116.41
+    },
+    {
+      "id": 11,
+      "p": 4,
+      "text": "In addition to the lost ecotourism revenue, there are a host of negative environmental consequences such as biodiversity loss, water and food shortages and the land being unable to mitigate the effects of climate change.",
+      "vi": "Ngoài việc mất đi nguồn thu từ du lịch sinh thái, còn có hàng loạt hậu quả tiêu cực về môi trường như mất đa dạng sinh học, thiếu nước và lương thực, cũng như đất đai không còn khả năng giảm nhẹ tác động của biến đổi khí hậu.",
+      "chunks": [
+        "In addition to the lost ecotourism revenue,",
+        "there are a host of negative environmental consequences",
+        "such as biodiversity loss, water and food shortages",
+        "and the land being unable",
+        "to mitigate the effects of climate change."
+      ],
+      "start": 117.0,
+      "end": 130.18
+    },
+    {
+      "id": 12,
+      "p": 4,
+      "text": "These areas are not valued for their unique attributes or the valuable natural resources they provide, Green said, “so we lose them.”",
+      "vi": "Green nói rằng những khu vực này không được coi trọng vì các đặc điểm riêng có hoặc nguồn tài nguyên thiên nhiên quý giá mà chúng cung cấp, “vì thế chúng ta đánh mất chúng.”",
+      "chunks": [
+        "These areas are not valued",
+        "for their unique attributes",
+        "or the valuable natural resources they provide,",
+        "Green said,",
+        "“so we lose them.”"
+      ],
+      "start": 130.85,
+      "end": 139.66
+    },
+    {
+      "id": 13,
+      "p": 5,
+      "text": "Tourists have historically been seen as having a negative impact on the environment.",
+      "vi": "Từ trước đến nay, khách du lịch thường được cho là gây tác động tiêu cực đến môi trường.",
+      "chunks": [
+        "Tourists have historically been seen",
+        "as having a negative impact",
+        "on the environment."
+      ],
+      "start": 139.66,
+      "end": 144.23
+    },
+    {
+      "id": 14,
+      "p": 5,
+      "text": "Critics complain that they violate fragile and threatened natural environments while contributing to greenhouse gases from the increased number of flights to these exotic and often remote locales.",
+      "vi": "Những người chỉ trích phàn nàn rằng họ xâm phạm các môi trường tự nhiên mong manh, bị đe dọa, đồng thời góp phần làm tăng khí nhà kính do số chuyến bay đến các địa điểm xa xôi và độc đáo này tăng lên.",
+      "chunks": [
+        "Critics complain that they violate",
+        "fragile and threatened natural environments",
+        "while contributing to greenhouse gases",
+        "from the increased number of flights",
+        "to these exotic and often remote locales."
+      ],
+      "start": 144.22,
+      "end": 154.99
+    },
+    {
+      "id": 15,
+      "p": 5,
+      "text": "While these criticisms are justified, Boley and Green said responsible programs promote education of ecological conservation and environmental sustainability, fostering a greater understanding and appreciation of these exotic areas.",
+      "vi": "Dù những chỉ trích ấy có cơ sở, Boley và Green cho rằng các chương trình du lịch có trách nhiệm thúc đẩy giáo dục về bảo tồn sinh thái và tính bền vững môi trường, qua đó nuôi dưỡng sự hiểu biết và trân trọng sâu sắc hơn đối với các khu vực độc đáo này.",
+      "chunks": [
+        "While these criticisms are justified,",
+        "Boley and Green said",
+        "responsible programs promote education",
+        "of ecological conservation and environmental sustainability,",
+        "fostering a greater understanding and appreciation of",
+        "these exotic areas."
+      ],
+      "start": 154.99,
+      "end": 168.24
+    }
+  ],
+  "phrases": [
+    {
+      "id": 0,
+      "text": "economic incentives",
+      "match": "economic incentives",
+      "vi": "động lực/khuyến khích về kinh tế",
+      "kind": "Collocation",
+      "sentence": 0,
+      "ipa": "/ˌiːkənˈɒmɪk ɪnsˈɛntɪvz/"
+    },
+    {
+      "id": 1,
+      "text": "drive conservation",
+      "match": "drive conservation",
+      "vi": "thúc đẩy hoạt động bảo tồn",
+      "kind": "Collocation",
+      "sentence": 0,
+      "ipa": "/dɹˈaɪv kˌɒnsəvˈeɪʃən/"
+    },
+    {
+      "id": 2,
+      "text": "a mutually beneficial relationship",
+      "match": "a mutually beneficial relationship",
+      "vi": "mối quan hệ đôi bên cùng có lợi",
+      "kind": "Collocation",
+      "sentence": 1,
+      "ipa": "/ɐ mjˈuːtʃuːəli bˌɛnɪfˈɪʃəl ɹɪlˈeɪʃənʃˌɪp/"
+    },
+    {
+      "id": 3,
+      "text": "enhanced tourism competitiveness",
+      "match": "enhanced tourism competitiveness",
+      "vi": "năng lực cạnh tranh du lịch được nâng cao",
+      "kind": "Useful chunk",
+      "sentence": 2,
+      "ipa": "/ɛnhˈanst tˈʊəɹɪzəm kəmpˈɛtɪtˌɪvnəs/"
+    },
+    {
+      "id": 4,
+      "text": "pristine natural resources",
+      "match": "pristine natural resources",
+      "vi": "tài nguyên thiên nhiên nguyên sơ",
+      "kind": "Collocation",
+      "sentence": 3,
+      "ipa": "/pɹɪstˈiːn nˈatʃəɹəl ɹɪzˈɔːsɪz/"
+    },
+    {
+      "id": 5,
+      "text": "subsidize environmental protection",
+      "match": "subsidizes environmental protection",
+      "vi": "hỗ trợ tài chính cho hoạt động bảo vệ môi trường",
+      "kind": "Collocation",
+      "sentence": 5,
+      "ipa": "/sˈʌbsɪdˌaɪz ɛnvˌaɪɹənmˈɛntəl pɹətˈɛkʃən/"
+    },
+    {
+      "id": 6,
+      "text": "conversion of land",
+      "match": "conversion of land",
+      "vi": "sự chuyển đổi mục đích sử dụng đất",
+      "kind": "Collocation",
+      "sentence": 6,
+      "ipa": "/kənvˈɜːʃən ɒv lˈand/"
+    },
+    {
+      "id": 7,
+      "text": "provide a boost to the economy",
+      "match": "provide a boost to the economy",
+      "vi": "tạo cú hích cho nền kinh tế",
+      "kind": "Collocation",
+      "sentence": 6,
+      "ipa": "/pɹəvˈaɪd ɐ bˈuːst tə ðɪ ɪkˈɒnəmi/"
+    },
+    {
+      "id": 8,
+      "text": "influence the public perception of conservation",
+      "match": "influence the public perception of conservation",
+      "vi": "tác động đến nhận thức của công chúng về bảo tồn",
+      "kind": "Useful chunk",
+      "sentence": 7,
+      "ipa": "/ˈɪnfluːəns ðə pˈʌblɪk pəsˈɛpʃən ɒv kˌɒnsəvˈeɪʃən/"
+    },
+    {
+      "id": 9,
+      "text": "ecotourism potential",
+      "match": "ecotourism potential",
+      "vi": "tiềm năng du lịch sinh thái",
+      "kind": "Collocation",
+      "sentence": 10,
+      "ipa": "/ˈɛkətˌʊəɹɪzəm pətˈɛnʃəl/"
+    },
+    {
+      "id": 10,
+      "text": "a host of negative environmental consequences",
+      "match": "a host of negative environmental consequences",
+      "vi": "hàng loạt hậu quả tiêu cực về môi trường",
+      "kind": "Useful chunk",
+      "sentence": 11,
+      "ipa": "/ɐ hˈəʊst ɒv nˈɛɡətˌɪv ɛnvˌaɪɹənmˈɛntəl kˈɒnsɪkwənsɪz/"
+    },
+    {
+      "id": 11,
+      "text": "biodiversity loss",
+      "match": "biodiversity loss",
+      "vi": "suy giảm đa dạng sinh học",
+      "kind": "Collocation",
+      "sentence": 11,
+      "ipa": "/bˌaɪəʊdaɪvˈɜːsɪti lˈɒs/"
+    },
+    {
+      "id": 12,
+      "text": "mitigate the effects of climate change",
+      "match": "mitigate the effects of climate change",
+      "vi": "giảm nhẹ tác động của biến đổi khí hậu",
+      "kind": "Collocation",
+      "sentence": 11,
+      "ipa": "/mˈɪtɪɡˌeɪt ðɪ ɪfˈɛkts ɒv klˈaɪmət tʃˈeɪndʒ/"
+    },
+    {
+      "id": 13,
+      "text": "fragile and threatened natural environments",
+      "match": "fragile and threatened natural environments",
+      "vi": "những môi trường tự nhiên mong manh và bị đe dọa",
+      "kind": "Useful chunk",
+      "sentence": 14,
+      "ipa": "/fɹˈadʒaɪl and θɹˈɛtənd nˈatʃəɹəl ɛnvˈaɪɹənmənts/"
+    },
+    {
+      "id": 14,
+      "text": "foster a greater understanding and appreciation of",
+      "match": "fostering a greater understanding and appreciation of",
+      "vi": "thúc đẩy sự hiểu biết và trân trọng sâu sắc hơn đối với",
+      "kind": "Useful chunk",
+      "sentence": 15,
+      "ipa": "/fˈɒstəɹ ɐ ɡɹˈeɪtəɹ ˌʌndəstˈandɪŋ and ɐpɹˌiːʃɪˈeɪʃən ɒv/"
+    }
+  ]
+}</script>
+<script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('reading-data').textContent), S=DATA.sentences, P=DATA.paragraphs, C=DATA.phrases;
+const $=id=>document.getElementById(id), audio=$('audio');
+let tab='home',viOn=false,phrasesOn=true,sIdx=0,cIdx=0,order=C.map((_,i)=>i),flipped=false,reviewOnly=false;
+let selected=S.map(()=>[]),banks=S.map((s)=>shuffled(s.chunks.map((_,i)=>i))),done=new Set(),feedback=S.map(()=>''),answerShown=S.map(()=>false),viHintShown=true;
+let marks=[],history=[],pendingSelection=[],reviewStates=C.map(()=>''),playToken=0,segment=null,raf=0,internalSeek=false;
+const esc=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+function shuffled(a){let b=a.slice();for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}if(b.length>2&&b.every((x,i)=>x===a[i])) b.reverse();return b}
+function toast(t){let e=$('toast');e.textContent=t;e.style.display='block';clearTimeout(toast._t);toast._t=setTimeout(()=>e.style.display='none',2600)}
+function showTab(which){cancelAudio();tab=which;for(let key of ['home','sentence','cards']){$(key).hidden=key!==which;$('nav-'+key).classList.toggle('active',key===which)}if(which==='sentence')renderSentence();if(which==='cards')renderCard();window.scrollTo({top:0,behavior:'instant'})}
+function setVi(v){viOn=v;$('toggleVi').textContent=v?'VI ON':'VI OFF';renderHome()}
+function setPhrases(v){phrasesOn=v;$('toggleColloc').textContent=v?'Key phrases ON':'Key phrases OFF';renderHome()}
+function searchPhrases(text){let matches=[];for(let c of C){let q=c.match.toLowerCase(),idx=0;while((idx=text.toLowerCase().indexOf(q,idx))!==-1){matches.push({a:idx,b:idx+q.length,id:c.id});idx+=q.length}}return matches}
+function markText(text,si){const cc=phrasesOn?searchPhrases(text):[];let mm=marks.filter(x=>x.si===si),bounds=new Set([0,text.length]);for(const v of [...cc,...mm]){bounds.add(v.a);bounds.add(v.b)}let b=[...bounds].filter(x=>x>=0&&x<=text.length).sort((x,y)=>x-y);return b.slice(0,-1).map((a,k)=>{const e=b[k+1],mid=(a+e)/2,coll=cc.find(x=>mid>=x.a&&mid<x.b),mark=mm.filter(x=>mid>=x.a&&mid<x.b).at(-1),classes=[];if(coll)classes.push('colloc');if(mark)classes.push('color-'+mark.color);const attrs=coll?' data-card="'+coll.id+'" tabindex="0" role="button" title="Open review card"':'';return '<span'+(classes.length?' class="'+classes.join(' ')+'"':'')+attrs+'>'+esc(text.slice(a,e))+'</span>'}).join('')}
+function renderHome(){const el=$('home');let h='<div class="line-head"><h2>Can Ecotourism Help Protect Nature?</h2><span class="meta">'+P.length+' paragraphs · '+S.length+' sentences · '+C.length+' key phrases</span></div>';
+h+='<div class="toolbar"><span>Select text:</span><button class="btn small" data-paint="yellow">Yellow</button><button class="btn small" data-paint="green">Green</button><button class="btn small" data-paint="pink">Pink</button><button class="btn small" data-paint="erase">Erase</button><button class="btn small" data-paint="undo">Undo</button><button class="btn small" data-paint="clear">Clear colours</button></div><div class="reading" id="passage">';
+for(let pi=0;pi<P.length;pi++){let ss=S.filter(s=>s.p===pi+1);h+='<p data-p="'+pi+'">'+ss.map(s=>'<span class="sentence-run" data-si="'+s.id+'">'+markText(s.text,s.id)+'</span>').join(' ')+'</p>';if(viOn)h+='<div class="para-vi" lang="vi">'+esc(ss.map(s=>s.vi).join(' '))+'</div>'}
+h+='</div>';let scroll=window.scrollY;el.innerHTML=h;updateAudioHighlight();if(tab==='home'&&Math.abs(window.scrollY-scroll)>30)window.scrollTo(0,scroll)}
+function getHomeSelection(){const sel=window.getSelection();if(!sel||sel.isCollapsed||!sel.toString().trim())return [];let r=sel.getRangeAt(0),results=[];for(let el of document.querySelectorAll('#passage .sentence-run')){if(!r.intersectsNode(el))continue;let range=document.createRange();range.selectNodeContents(el);const len=el.textContent.length;let aRange=range.cloneRange(),bRange=range.cloneRange();try{aRange.setEnd(r.startContainer,r.startOffset);bRange.setEnd(r.endContainer,r.endOffset)}catch(e){continue}let a=Math.min(len,aRange.toString().length),b=Math.min(len,bRange.toString().length);if(a<b)results.push({si:Number(el.dataset.si),a,b})}return results}
+function paint(color){if(color==='undo'){if(history.length){marks=history.pop();renderHome()}return}if(color==='clear'){history.push(structuredClone(marks));marks=[];renderHome();return}
+let area=getHomeSelection();if(!area.length)area=pendingSelection;if(!area.length){toast('Select some words in the reading first.');return}
+history.push(structuredClone(marks));for(let q of area){if(color==='erase'){marks=marks.flatMap(m=>{if(m.si!==q.si||m.b<=q.a||m.a>=q.b)return [m];let parts=[];if(m.a<q.a)parts.push({...m,b:q.a});if(m.b>q.b)parts.push({...m,a:q.b});return parts})}else{marks=marks.flatMap(m=>{if(m.si!==q.si||m.b<=q.a||m.a>=q.b)return [m];let parts=[];if(m.a<q.a)parts.push({...m,b:q.a});if(m.b>q.b)parts.push({...m,a:q.b});return parts});marks.push({...q,color})}}pendingSelection=[];window.getSelection()?.removeAllRanges();renderHome()}
+function renderSentence(){const s=S[sIdx],num=S.length,parts=s.chunks,chosen=selected[sIdx],bank=banks[sIdx],f=feedback[sIdx];let opts=S.map(x=>'<option value="'+x.id+'"'+(x.id===sIdx?' selected':'')+'>Sentence '+(x.id+1)+' · Paragraph '+x.p+'</option>').join('');let h='<div class="builder"><div class="overline">SENTENCE BUILDER · Paragraph '+s.p+'</div><div class="builder-top"><h2>Sentence '+(sIdx+1)+' / '+num+'</h2><label class="detail-tools" for="goSentence">Go to sentence <select id="goSentence">'+opts+'</select></label></div>';
+h+='<div class="progress-track"><div class="progress-fill" style="width:'+(100*done.size/num)+'%"></div></div><section class="hint-box"><div class="line-head"><h3>VIETNAMESE HINT</h3><button class="btn small" id="toggleHint">'+(viHintShown?'Hide':'Show')+'</button></div>'+(viHintShown?'<p lang="vi">'+esc(s.vi)+'</p>':'<div class="hidden-hint">Vietnamese hint is hidden.</div>')+'</section>';
+h+='<div class="listen-row"><button class="btn primary" id="listenSentence">▶ Listen to sentence</button><button class="btn" id="stopSentence">■ Stop</button><span class="muted">Listen once, then build the sentence.</span></div>';
+h+='<div class="build-slot" id="buildSlot">'+(chosen.length?chosen.map(i=>'<button class="chunk placed" data-remove="'+i+'">'+esc(parts[i])+'</button>').join(' '):'<div class="placeholder">Tap the chunks to build the original sentence.</div>')+'</div>';
+h+='<div class="chunk-bank" id="chunkBank">'+bank.filter(i=>!chosen.includes(i)).map(i=>'<button class="chunk" data-add="'+i+'">'+esc(parts[i])+'</button>').join('')+'</div>';
+h+='<div class="actions"><button class="btn primary" id="checkSentence">Check</button><button class="btn" id="hintSentence">Hint</button><button class="btn" id="clearSentence">Clear</button><button class="btn" id="answerSentence">Show Answer</button></div>';
+h+='<div class="feedback '+(f.startsWith('Correct')?'ok':'err')+'" role="status">'+esc(f)+'</div>';
+if(answerShown[sIdx])h+='<div class="answer">'+esc(s.text)+'</div>';
+h+='<div class="pager"><button class="btn" id="prevSentence" '+(sIdx===0?'disabled':'')+'>← Prev</button><span class="progress">'+done.size+' / '+num+' complete</span><button class="btn" id="nextSentence" '+(sIdx===num-1?'disabled':'')+'>Next →</button></div></div>';$('sentence').innerHTML=h}
+function goSentence(i){cancelAudio();sIdx=Math.max(0,Math.min(S.length-1,Number(i)));viHintShown=true;renderSentence()}
+function addChunk(i){if(selected[sIdx].includes(i))return;selected[sIdx].push(i);feedback[sIdx]='';answerShown[sIdx]=false;renderSentence()}
+function removeChunk(i){selected[sIdx]=selected[sIdx].filter(x=>x!==i);feedback[sIdx]='';answerShown[sIdx]=false;renderSentence()}
+function checkSentence(){let k=selected[sIdx],n=S[sIdx].chunks.length;if(k.length===n&&k.every((v,i)=>v===i)){done.add(sIdx);feedback[sIdx]='Correct! You have restored the original sentence.'}else if(!k.length){feedback[sIdx]='Tap the chunks to build the sentence first.'}else{feedback[sIdx]='Not yet in the original order. Try again.'}renderSentence()}
+function nextHint(){let arr=selected[sIdx],target=arr.length;if(arr.every((v,i)=>v===i)&&target<S[sIdx].chunks.length)feedback[sIdx]='Next chunk: '+S[sIdx].chunks[target];else feedback[sIdx]='Hint: Start again from the first chunk and follow the original order.';renderSentence()}
+function clearSentence(){selected[sIdx]=[];banks[sIdx]=shuffled(S[sIdx].chunks.map((_,i)=>i));answerShown[sIdx]=false;feedback[sIdx]='';renderSentence()}
+function activeCardList(){return reviewOnly?order.filter(i=>reviewStates[i]==='review'):order}
+function currentCardId(){let ids=activeCardList();if(!ids.length)return null;cIdx=Math.min(Math.max(0,cIdx),ids.length-1);return ids[cIdx]}
+function renderCard(){let ids=activeCardList(),id=currentCardId();let h='<div class="line-head"><h2>Review Cards</h2><span class="meta">'+C.length+' phrases · '+C.filter((x,i)=>reviewStates[i]==='remembered').length+' remembered</span></div>';
+h+='<div class="card-tools"><button class="btn small" id="shuffleCards">Shuffle</button><button class="btn small" id="reviewFilter">'+(reviewOnly?'Show all cards':'Needs review only')+'</button><button class="btn small" id="resetCards">Reset cards</button></div>';
+if(id===null){h+='<div class="flash">No cards are marked “Needs review”. <button class="btn" id="showAllCards">Show all cards</button></div>';$('cards').innerHTML=h;return}
+let c=C[id],s=S[c.sentence];h+='<div class="overline">CARD '+(cIdx+1)+' / '+ids.length+'</div><div class="flash"><div class="kind">'+esc(c.kind)+'</div><div class="phrase">'+esc(c.text)+'</div>';
+if(flipped){let start=s.text.toLowerCase().indexOf(c.match.toLowerCase());let example=start>=0?esc(s.text.slice(0,start))+'<strong>'+esc(s.text.slice(start,start+c.match.length))+'</strong>'+esc(s.text.slice(start+c.match.length)):esc(s.text);h+='<div class="flash-detail"><p class="ipa">'+esc(c.ipa)+'</p><div class="meaning" lang="vi">'+esc(c.vi)+'</div><div class="example">'+example+'</div><p class="translate" lang="vi">'+esc(s.vi)+'</p><p class="tip">From Sentence '+(s.id+1)+' · Paragraph '+s.p+'</p><button class="btn small" id="jumpSentence">Open source sentence →</button></div>'}
+h+='</div><div class="card-actions"><button class="btn" id="prevCard" '+(cIdx===0?'disabled':'')+'>← Previous</button><button class="btn primary" id="flipCard">'+(flipped?'Hide answer':'Show answer')+'</button><button class="btn" id="nextCard" '+(cIdx===ids.length-1?'disabled':'')+'>Next →</button></div>';
+h+='<div class="card-actions" style="margin-top:17px"><button class="btn" id="listenCard">▶ Listen to sentence</button><button class="btn" id="stopCard">■ Stop</button><button class="btn '+(reviewStates[id]==='review'?'selected-review':'')+'" id="markReview">Needs review</button><button class="btn '+(reviewStates[id]==='remembered'?'studied':'')+'" id="markRemembered">Remembered</button></div>';
+$('cards').innerHTML=h}
+function cardMove(diff){cancelAudio();let ids=activeCardList();cIdx=Math.max(0,Math.min(ids.length-1,cIdx+diff));flipped=false;renderCard()}
+function pickCard(id){cancelAudio();reviewOnly=false;cIdx=order.indexOf(id);flipped=false;showTab('cards')}
+function updateAudioHighlight(){document.querySelectorAll('.sentence-run.audio-active').forEach(e=>e.classList.remove('audio-active'));if(audio.paused)return;let t=audio.currentTime,idx=S.findIndex(s=>t>=s.start&&t<s.end);if(idx>=0)document.querySelectorAll('.sentence-run[data-si="'+idx+'"]').forEach(e=>e.classList.add('audio-active'))}
+function stopAtEnd(){if(!audio.paused){if(segment&&audio.currentTime>=segment.end-0.025){const last=segment.end;audio.pause();segment=null;audio.currentTime=last}updateAudioHighlight();raf=requestAnimationFrame(stopAtEnd)}else{updateAudioHighlight();raf=0}}
+function cancelAudio(){playToken++;segment=null;internalSeek=false;audio.pause();if(raf){cancelAnimationFrame(raf);raf=0}updateAudioHighlight()}
+async function playSentence(i){cancelAudio();const tk=playToken;const s=S[i];if(!audio.readyState){try{await new Promise((resolve,reject)=>{if(audio.readyState)return resolve();const ok=()=>{clean();resolve()},err=()=>{clean();reject(new Error('Audio unavailable'))};const clean=()=>{audio.removeEventListener('loadedmetadata',ok);audio.removeEventListener('error',err)};audio.addEventListener('loadedmetadata',ok);audio.addEventListener('error',err);audio.load()})}catch(e){if(tk===playToken)toast('Could not load reading.mp3');return}}
+if(tk!==playToken)return;try{internalSeek=true;audio.currentTime=s.start;segment={id:i,end:s.end};audio.playbackRate=Number($('speed').value);await audio.play();if(tk!==playToken){audio.pause();return}if(!raf)raf=requestAnimationFrame(stopAtEnd)}catch(e){if(tk===playToken)toast('Audio playback failed. Check reading.mp3')}}
+function resetAll(){cancelAudio();viOn=false;phrasesOn=true;selected=S.map(()=>[]);banks=S.map(s=>shuffled(s.chunks.map((_,i)=>i)));done.clear();feedback=S.map(()=>'');answerShown=S.map(()=>false);viHintShown=true;marks=[];history=[];pendingSelection=[];reviewStates=C.map(()=>'');order=C.map((_,i)=>i);cIdx=0;sIdx=0;flipped=false;reviewOnly=false;setVi(false);setPhrases(true);showTab('home')}
+// Single shared audio element; navigating any learning module immediately stops the previous sentence.
+audio.addEventListener('timeupdate',updateAudioHighlight);audio.addEventListener('pause',updateAudioHighlight);audio.addEventListener('play',()=>{if(!raf)raf=requestAnimationFrame(stopAtEnd)});audio.addEventListener('ended',()=>{segment=null;updateAudioHighlight()});
+audio.addEventListener('seeking',()=>{if(segment&&!internalSeek)segment=null});audio.addEventListener('seeked',()=>{internalSeek=false});
+$('speed').addEventListener('change',e=>audio.playbackRate=Number(e.target.value));$('stopAudio').addEventListener('click',cancelAudio);$('toggleVi').addEventListener('click',()=>setVi(!viOn));$('toggleColloc').addEventListener('click',()=>setPhrases(!phrasesOn));$('resetAll').addEventListener('click',resetAll);
+document.querySelectorAll('[data-tab]').forEach(e=>e.addEventListener('click',()=>showTab(e.dataset.tab)));
+document.addEventListener('selectionchange',()=>{if(tab==='home'&&window.getSelection()?.toString().trim()&&$('passage')?.contains(window.getSelection().anchorNode)){let q=getHomeSelection();if(q.length)pendingSelection=q}});
+document.addEventListener('click',e=>{let t=e.target.closest('button,[data-card]');if(!t)return;
+if(t.hasAttribute('data-card')){pickCard(Number(t.dataset.card));return}if(t.dataset.paint){paint(t.dataset.paint);return}if(t.hasAttribute('data-add')){addChunk(Number(t.dataset.add));return}if(t.hasAttribute('data-remove')){removeChunk(Number(t.dataset.remove));return}
+switch(t.id){case 'toggleHint':viHintShown=!viHintShown;renderSentence();break;case 'listenSentence':playSentence(sIdx);break;case 'stopSentence':cancelAudio();break;case 'checkSentence':checkSentence();break;case 'hintSentence':nextHint();break;case 'clearSentence':clearSentence();break;case 'answerSentence':answerShown[sIdx]=!answerShown[sIdx];renderSentence();break;case 'prevSentence':goSentence(sIdx-1);break;case 'nextSentence':goSentence(sIdx+1);break;
+case 'flipCard':flipped=!flipped;renderCard();break;case 'prevCard':cardMove(-1);break;case 'nextCard':cardMove(1);break;case 'listenCard':{let id=currentCardId();if(id!==null)playSentence(C[id].sentence);break}case 'stopCard':cancelAudio();break;case 'jumpSentence':{let id=currentCardId();if(id!==null){sIdx=C[id].sentence;showTab('sentence')}break}
+case 'markReview':case 'markRemembered':{let id=currentCardId();if(id!==null){reviewStates[id]=t.id==='markReview'?'review':'remembered';cancelAudio();renderCard()}break}
+case 'shuffleCards':{let id=currentCardId();order=shuffled(order);cIdx=Math.max(0,activeCardList().indexOf(id));flipped=false;cancelAudio();renderCard();break}
+case 'reviewFilter':reviewOnly=!reviewOnly;cIdx=0;flipped=false;cancelAudio();renderCard();break;
+case 'showAllCards':reviewOnly=false;cIdx=0;renderCard();break;
+case 'resetCards':reviewStates=C.map(()=>'');reviewOnly=false;cIdx=0;order=C.map((_,i)=>i);flipped=false;cancelAudio();renderCard();break;
+}});
+document.addEventListener('change',e=>{if(e.target.id==='goSentence')goSentence(e.target.value)});
+document.addEventListener('keydown',e=>{let a=e.target.closest('[data-card]');if(a&&(e.key==='Enter'||e.key===' ')){e.preventDefault();pickCard(Number(a.dataset.card))}});
+renderHome();renderSentence();renderCard();
+</script>
+</body></html>
